@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AramydEEE Electrical Services</title>
+    <meta name="description" content="Residential and commercial electrical services — installations, repairs, inspections. Fast, safe, certified electricians near you.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">AramydEEE</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title">Reliable Electrical Services. Fast. Safe. Local.</h1>
+            <p class="lead">Certified electricians for homes and businesses — wiring, upgrades, emergency repairs, inspections, and smart-home installs.</p>
+            <div class="cta-row">
+              <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+              <a href="#services" class="btn btn-outline">Our Services</a>
+            </div>
+            <ul class="trust-list">
+              <li>24/7 Emergency</li>
+              <li>Licensed &amp; Insured</li>
+              <li>5-year Workmanship Warranty</li>
+            </ul>
+          </div>
+          <div class="hero-art">
+            <svg class="bolt" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="boltTitle">
+              <title id="boltTitle">Electric bolt illustration</title>
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#ffd54a"/>
+                  <stop offset="100%" stop-color="#ff6a00"/>
+                </linearGradient>
+              </defs>
+              <path class="bolt-shape" d="M20 0 L80 0 L46 64 L100 64 L20 140 L34 88 L0 88 Z" fill="url(#g)"/>
+              <path class="bolt-stroke" d="M20 0 L80 0 L46 64 L100 64 L20 140 L34 88 L0 88 Z" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">Comprehensive electrical solutions for every need.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Residential Wiring</h3>
+            <p>Safe rewiring, panel upgrades, and smart home setups that keep your family powered.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🏢</div>
+            <h3>Commercial Services</h3>
+            <p>Reliable installations and maintenance for offices, retail, and industrial facilities.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔍</div>
+            <h3>Inspections &amp; Safety</h3>
+            <p>Thorough safety inspections, code compliance checks, and energy audits.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚨</div>
+            <h3>Emergency Repairs</h3>
+            <p>Fast response for outages, faults, and urgent electrical hazards — 24/7.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-media">
+            <div class="badge">10+ Years</div>
+            <div class="photo-placeholder" aria-hidden="true"></div>
+          </div>
+          <div class="about-copy">
+            <h2>Experienced Electricians You Can Trust</h2>
+            <p>BrightWire employs certified electricians trained in the latest safety standards. We prioritize clear pricing, timely work, and lasting results.</p>
+            <ul>
+              <li>Background-checked professionals</li>
+              <li>Transparent estimates</li>
+              <li>Safe, code-compliant solutions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2 class="section-title">Request a Quote</h2>
+        <p class="section-sub">Fill out a quick form and we'll call you back within one business day.</p>
+        <form class="contact-form" onsubmit="return false;" aria-label="Contact form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Email (optional)">
+            <select name="service">
+              <option>General Repair</option>
+              <option>Panel Upgrade</option>
+              <option>Inspection</option>
+              <option>Emergency</option>
+            </select>
+          </div>
+          <textarea name="message" placeholder="Describe your request (optional)" rows="4"></textarea>
+          <div class="form-actions">
+            <button class="btn btn-primary">Request Quote</button>
+            <small class="muted">Or call us: <strong>(555) 123‑4567</strong></small>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> AramydEEE Electrical</div>
+        <div class="footer-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    </script>
+  </body>
+</html>
